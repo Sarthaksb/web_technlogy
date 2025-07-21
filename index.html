@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My To-Do List</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #e0f2f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .todo-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0097a7;
+    }
+
+    ul {
+      margin-top: 20px;
+      padding-left: 0;
+      list-style-type: none;
+    }
+
+    li {
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    li span {
+      color: red;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 8px;
+      font-size: 18px;
+    }
+
+    li span:hover {
+      color: darkred;
+    }
+
+    @media (max-width: 500px) {
+      .todo-container {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      button {
+        padding: 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="todo-container">
+    <h2>My To-Do List</h2>
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="Enter a new task" />
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList">
+      <!-- Tasks will appear here -->
+    </ul>
+  </div>
+
+  <!-- Link external JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
