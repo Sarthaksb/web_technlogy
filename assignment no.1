@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Healthcare Clinic</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .section-title {
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .service-card {
+      padding: 20px;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .appointment-section {
+      background-color: #7c3aed;
+      padding: 60px 20px;
+      color: white;
+    }
+
+    .appointment-form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      color: black;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Healthcare Clinic</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Appointment</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <p class="text-center">
+        Welcome to Healthcare Clinic. We provide expert medical care with a human touch, ensuring you get the best health solutions.
+        Our dedicated team helps maintain a healthy lifestyle and improves your well-being.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6">
+          <div class="service-card">
+            <h5>General Consultation</h5>
+            <p>₹ 300</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-card">
+            <h5>Dental Check-up</h5>
+            <p>₹ 450</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-card">
+            <h5>Cardiology Screening</h5>
+            <p>₹ 1,200</p>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="service-card">
+            <h5>Physiotherapy</h5>
+            <p>₹ 800</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title">Meet Our Doctors</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="text-center bg-white p-4 rounded shadow-sm">
+            <h5>Dr. Asha Mehta</h5>
+            <p>General Physician</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center bg-white p-4 rounded shadow-sm">
+            <h5>Dr. Rohit Kulkarni</h5>
+            <p>Cardiologist</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="text-center bg-white p-4 rounded shadow-sm">
+            <h5>Dr. Nisha Shah</h5>
+            <p>Dentist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Form Section -->
+  <section class="appointment-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2 class="text-center mb-4">Book an Appointment</h2>
+          <form class="appointment-form">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required />
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Preferred Date & Time" required />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-success">Book Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Healthcare Clinic. All rights reserved.</p>
+      <p class="mb-0">Designed by Your Name | Contact: contact@clinic.com</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+function addTask() {
+  const taskInput = document.getElementById("taskInput");
+  const taskList = document.getElementById("taskList");
+  if (taskInput.value.trim() !== "") {
+    const li = document.createElement("li");
+    li.textContent = taskInput.value;
+    // Create delete button
+    const deleteBtn = document.createElement("span");
+    deleteBtn.textContent = "❌";
+    deleteBtn.onclick = function () {
+      li.remove();
+    };
+    li.appendChild(deleteBtn); // Add delete button to task
+    taskList.appendChild(li);  // Add task to list
+    taskInput.value = "";      // Clear input
+  }
+}
